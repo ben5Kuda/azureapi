@@ -5,6 +5,10 @@
     <UserSecretsId>8038ca1e-230f-47ab-92c7-85ac461ef25f</UserSecretsId>
   </PropertyGroup>
 
+  <PropertyGroup>
+  <EnableMSDeployAppOffline>true</EnableMSDeployAppOffline>
+</PropertyGroup>
+  
   <ItemGroup>
     <Folder Include="Logs\" />
     <Folder Include="wwwroot\" />
