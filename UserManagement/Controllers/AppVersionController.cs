@@ -11,12 +11,12 @@ namespace UserManagement.Controllers
   public class AppVersionController : Controller
   {
     [HttpGet]
-    public AppVersion Get()
+    public ApplicationVersion Get()
     {
-      return new AppVersion
+      return new ApplicationVersion
       {
-        AppVesrion = "1.12",
-        BuildVesrion = "1078brd"
+        AppVersion = "1.45",
+        BuildVersion = "Azure Build"
       };
     }
   }

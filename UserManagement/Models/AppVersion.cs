@@ -4,9 +4,9 @@ using System.Text;
 
 namespace UserManagement.Models
 {
- public class AppVersion
+ public class ApplicationVersion
   {
-    public string AppVesrion { get; set; }
-    public string BuildVesrion { get; set; }
+    public string AppVersion { get; set; }
+    public string BuildVersion { get; set; }
   }
 }
