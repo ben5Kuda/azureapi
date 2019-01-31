@@ -1,0 +1,11 @@
+C:\Users\kmushore\Documents\Visual Studio 2017\Projects\MicroApiDemo\UserManagement\bin\Release\netcoreapp2.1\UserManagement.deps.json
+C:\Users\kmushore\Documents\Visual Studio 2017\Projects\MicroApiDemo\UserManagement\bin\Release\netcoreapp2.1\UserManagement.runtimeconfig.json
+C:\Users\kmushore\Documents\Visual Studio 2017\Projects\MicroApiDemo\UserManagement\bin\Release\netcoreapp2.1\UserManagement.runtimeconfig.dev.json
+C:\Users\kmushore\Documents\Visual Studio 2017\Projects\MicroApiDemo\UserManagement\bin\Release\netcoreapp2.1\UserManagement.dll
+C:\Users\kmushore\Documents\Visual Studio 2017\Projects\MicroApiDemo\UserManagement\bin\Release\netcoreapp2.1\UserManagement.pdb
+C:\Users\kmushore\Documents\Visual Studio 2017\Projects\MicroApiDemo\UserManagement\obj\Release\netcoreapp2.1\UserManagement.csprojAssemblyReference.cache
+C:\Users\kmushore\Documents\Visual Studio 2017\Projects\MicroApiDemo\UserManagement\obj\Release\netcoreapp2.1\UserManagement.csproj.CoreCompileInputs.cache
+C:\Users\kmushore\Documents\Visual Studio 2017\Projects\MicroApiDemo\UserManagement\obj\Release\netcoreapp2.1\UserManagement.AssemblyInfoInputs.cache
+C:\Users\kmushore\Documents\Visual Studio 2017\Projects\MicroApiDemo\UserManagement\obj\Release\netcoreapp2.1\UserManagement.AssemblyInfo.cs
+C:\Users\kmushore\Documents\Visual Studio 2017\Projects\MicroApiDemo\UserManagement\obj\Release\netcoreapp2.1\UserManagement.dll
+C:\Users\kmushore\Documents\Visual Studio 2017\Projects\MicroApiDemo\UserManagement\obj\Release\netcoreapp2.1\UserManagement.pdb
