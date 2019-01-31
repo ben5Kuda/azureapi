@@ -19,6 +19,6 @@ steps:
 - task: PublishBuildArtifacts@1
   inputs:  
     pathtoPublish: $(Build.ArtifactStagingDirectory)
-    publishLocation: 'Container'
-    TargetPath: /home/vsts/work/1/a
     artifactName: MyBuildOutputs
+   
+    
