@@ -16,7 +16,9 @@ namespace UserManagement.Controllers
       return new ApplicationVersion
       {
         AppVersion = "1.45",
-        BuildVersion = "Azure Build"
+        BuildVersion = "Azure Build",
+        Host = Environment.MachineName
+        
       };
     }
   }

@@ -8,5 +8,6 @@ namespace UserManagement.Models
   {
     public string AppVersion { get; set; }
     public string BuildVersion { get; set; }
+    public string Host { get; set; }
   }
 }
