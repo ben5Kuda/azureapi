@@ -1,0 +1,480 @@
+info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[0]
+      User profile is available. Using 'C:\Users\kmushore\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+Hosting environment: Development
+Content root path: C:\Users\kmushore\Documents\Visual Studio 2017\Projects\MicroApiDemo\Host
+Now listening on: http://127.0.0.1:33822
+Application started. Press Ctrl+C to shut down.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/api/values  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 4611.5329ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/swagger/index.html  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 87.5656ms 200 text/html
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/swagger/v1/swagger.json  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 143.3678ms 200 application/json;charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/swagger/oauth2-redirect.html  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /oauth2-redirect.html was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 10.1302ms 304 text/html
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/api/AppVersion  
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "AppVersion"}. Executing action UserManagement.Controllers.AppVersionController.Get (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.AppVersionController.Get (UserManagement) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.AppVersionController.Get (UserManagement), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.4656ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'UserManagement.Models.AppVersion'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.AppVersionController.Get (UserManagement) in 37.2013ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 602.5248ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/api/AppVersion  
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "AppVersion"}. Executing action UserManagement.Controllers.AppVersionController.Get (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.AppVersionController.Get (UserManagement) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.AppVersionController.Get (UserManagement), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.0138ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'UserManagement.Models.AppVersion'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.AppVersionController.Get (UserManagement) in 0.6793ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 167.0259ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/api/AppVersion  
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "AppVersion"}. Executing action UserManagement.Controllers.AppVersionController.Get (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.AppVersionController.Get (UserManagement) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.AppVersionController.Get (UserManagement), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.0043ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'UserManagement.Models.AppVersion'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.AppVersionController.Get (UserManagement) in 0.1513ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 153.9444ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/api/AppVersion  
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "AppVersion"}. Executing action UserManagement.Controllers.AppVersionController.Get (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.AppVersionController.Get (UserManagement) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.AppVersionController.Get (UserManagement), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.004ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'UserManagement.Models.AppVersion'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.AppVersionController.Get (UserManagement) in 15.9803ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 171.8947ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/api/AppVersion  
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "AppVersion"}. Executing action UserManagement.Controllers.AppVersionController.Get (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.AppVersionController.Get (UserManagement) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.AppVersionController.Get (UserManagement), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.0029ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'UserManagement.Models.AppVersion'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.AppVersionController.Get (UserManagement) in 0.1553ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 171.2766ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/api/AppVersion  
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "AppVersion"}. Executing action UserManagement.Controllers.AppVersionController.Get (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.AppVersionController.Get (UserManagement) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.AppVersionController.Get (UserManagement), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.004ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'UserManagement.Models.AppVersion'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.AppVersionController.Get (UserManagement) in 0.1232ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 259.147ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/api/AppVersion  
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "AppVersion"}. Executing action UserManagement.Controllers.AppVersionController.Get (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.AppVersionController.Get (UserManagement) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.AppVersionController.Get (UserManagement), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.0029ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'UserManagement.Models.AppVersion'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.AppVersionController.Get (UserManagement) in 0.1247ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/api/AppVersion  
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "AppVersion"}. Executing action UserManagement.Controllers.AppVersionController.Get (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.AppVersionController.Get (UserManagement) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.AppVersionController.Get (UserManagement), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.0032ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'UserManagement.Models.AppVersion'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.AppVersionController.Get (UserManagement) in 0.1436ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/api/AppVersion  
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "AppVersion"}. Executing action UserManagement.Controllers.AppVersionController.Get (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.AppVersionController.Get (UserManagement) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.AppVersionController.Get (UserManagement), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.0102ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'UserManagement.Models.AppVersion'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.AppVersionController.Get (UserManagement) in 0.8938ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 514.5329ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 374.6127ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/api/AppVersion  
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "AppVersion"}. Executing action UserManagement.Controllers.AppVersionController.Get (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.AppVersionController.Get (UserManagement) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.AppVersionController.Get (UserManagement), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.0032ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'UserManagement.Models.AppVersion'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.AppVersionController.Get (UserManagement) in 0.1414ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 335.1886ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/api/AppVersion  
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "AppVersion"}. Executing action UserManagement.Controllers.AppVersionController.Get (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.AppVersionController.Get (UserManagement) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.AppVersionController.Get (UserManagement), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.0032ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'UserManagement.Models.AppVersion'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.AppVersionController.Get (UserManagement) in 0.1393ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 357.0008ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 170.3941ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/api/AppVersion  
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "AppVersion"}. Executing action UserManagement.Controllers.AppVersionController.Get (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.AppVersionController.Get (UserManagement) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.AppVersionController.Get (UserManagement), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.0029ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'UserManagement.Models.AppVersion'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.AppVersionController.Get (UserManagement) in 0.1393ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 179.6075ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/api/AppVersion  
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "AppVersion"}. Executing action UserManagement.Controllers.AppVersionController.Get (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.AppVersionController.Get (UserManagement) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.AppVersionController.Get (UserManagement), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.0032ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'UserManagement.Models.AppVersion'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.AppVersionController.Get (UserManagement) in 0.1469ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 149.9549ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/api/AppVersion  
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "AppVersion"}. Executing action UserManagement.Controllers.AppVersionController.Get (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.AppVersionController.Get (UserManagement) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.AppVersionController.Get (UserManagement), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.0036ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'UserManagement.Models.AppVersion'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.AppVersionController.Get (UserManagement) in 0.1615ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 149.4505ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/api/AppVersion  
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "AppVersion"}. Executing action UserManagement.Controllers.AppVersionController.Get (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.AppVersionController.Get (UserManagement) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.AppVersionController.Get (UserManagement), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.0032ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'UserManagement.Models.AppVersion'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.AppVersionController.Get (UserManagement) in 0.163ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 178.0227ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/api/AppVersion  
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "AppVersion"}. Executing action UserManagement.Controllers.AppVersionController.Get (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.AppVersionController.Get (UserManagement) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.AppVersionController.Get (UserManagement), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.0029ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'UserManagement.Models.AppVersion'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.AppVersionController.Get (UserManagement) in 0.1232ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 157.8767ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/api/AppVersion  
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "AppVersion"}. Executing action UserManagement.Controllers.AppVersionController.Get (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.AppVersionController.Get (UserManagement) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.AppVersionController.Get (UserManagement), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.0036ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'UserManagement.Models.AppVersion'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.AppVersionController.Get (UserManagement) in 0.1684ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 177.3848ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/api/AppVersion  
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "AppVersion"}. Executing action UserManagement.Controllers.AppVersionController.Get (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.AppVersionController.Get (UserManagement) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.AppVersionController.Get (UserManagement), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.0036ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'UserManagement.Models.AppVersion'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.AppVersionController.Get (UserManagement) in 0.2742ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 194.4847ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/api/AppVersion  
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "AppVersion"}. Executing action UserManagement.Controllers.AppVersionController.Get (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.AppVersionController.Get (UserManagement) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.AppVersionController.Get (UserManagement), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.0029ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'UserManagement.Models.AppVersion'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.AppVersionController.Get (UserManagement) in 0.1447ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 188.8811ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/api/AppVersion  
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "AppVersion"}. Executing action UserManagement.Controllers.AppVersionController.Get (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.AppVersionController.Get (UserManagement) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.AppVersionController.Get (UserManagement), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.0029ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'UserManagement.Models.AppVersion'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.AppVersionController.Get (UserManagement) in 0.2322ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 140.7392ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 PUT http://localhost:44362/api/LockUsers?username=alice@zaza  0
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 105.3846ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 PUT http://localhost:44362/api/LockUsers?username=alice@zaza  0
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 110.1297ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 PUT http://localhost:44362/api/LockUsers?username=alice@zaza  0
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 114.9776ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 PATCH http://localhost:44362/api/LockUsers?username=alice%40zaza  
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Patch", controller = "LockUsers"}. Executing action UserManagement.Controllers.LockUsersController.Patch (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.LockUsersController.Patch (UserManagement) with arguments (alice@zaza) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.4-rtm-31024 initialized 'SsoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [u].[UsersId], [u].[IsLockedOut], [u].[Name], [u].[Password], [u].[PasswordRetryCount], [u].[Profile], [u].[Surname], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[Username] = @__username_0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.LockUsersController.Patch (UserManagement), returned result Microsoft.AspNetCore.Mvc.ForbidResult in 334.0534ms.
+info: Microsoft.AspNetCore.Mvc.ForbidResult[1]
+      Executing ForbidResult with authentication schemes ().
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[13]
+      AuthenticationScheme: Bearer was forbidden.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.LockUsersController.Patch (UserManagement) in 428.4821ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 581.7578ms 403 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 PUT http://localhost:44362/api/LockUsers?username=alice@zaza  0
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 132.3838ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 PATCH http://localhost:44362/api/LockUsers?username=alice@zaza  0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Patch", controller = "LockUsers"}. Executing action UserManagement.Controllers.LockUsersController.Patch (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.LockUsersController.Patch (UserManagement) with arguments (alice@zaza) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.4-rtm-31024 initialized 'SsoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (22ms) [Parameters=[@__username_0='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [u].[UsersId], [u].[IsLockedOut], [u].[Name], [u].[Password], [u].[PasswordRetryCount], [u].[Profile], [u].[Surname], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[Username] = @__username_0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.LockUsersController.Patch (UserManagement), returned result Microsoft.AspNetCore.Mvc.ForbidResult in 25.4738ms.
+info: Microsoft.AspNetCore.Mvc.ForbidResult[1]
+      Executing ForbidResult with authentication schemes ().
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[13]
+      AuthenticationScheme: Bearer was forbidden.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.LockUsersController.Patch (UserManagement) in 26.6295ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 165.1129ms 403 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 PUT http://localhost:44362/api/LockUsers?username=alice@zaza  0
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 142.8452ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:44362/api/LockUsers?username=alice@zaza  0
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 151.1164ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 PUT http://localhost:44362/api/LockUsers?username=alice@zaza  0
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 114.8883ms 404 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

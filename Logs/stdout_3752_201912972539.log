@@ -1,0 +1,207 @@
+info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[0]
+      User profile is available. Using 'C:\Users\kmushore\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+Hosting environment: Development
+Content root path: C:\Users\kmushore\Documents\Visual Studio 2017\Projects\MicroApiDemo\Host
+Now listening on: http://127.0.0.1:44423
+Application started. Press Ctrl+C to shut down.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/api/values  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 2582.0711ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/swagger/index.html  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 99.8112ms 200 text/html
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/swagger/v1/swagger.json  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 171.6203ms 200 application/json;charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/api/Identity  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "Identity"}. Executing action UserManagement.Controllers.IdentityController.Get (UserManagement)
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[2]
+      Authorization failed.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+info: Microsoft.AspNetCore.Mvc.ChallengeResult[1]
+      Executing ChallengeResult with authentication schemes ().
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[12]
+      AuthenticationScheme: Bearer was challenged.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.IdentityController.Get (UserManagement) in 26.9029ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 362.8968ms 401 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 PATCH http://localhost:44362/api/LockUsers?id=10  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Patch", controller = "LockUsers"}. Executing action UserManagement.Controllers.LockUsersController.Patch (UserManagement)
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[2]
+      Authorization failed.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+info: Microsoft.AspNetCore.Mvc.ChallengeResult[1]
+      Executing ChallengeResult with authentication schemes ().
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[12]
+      AuthenticationScheme: Bearer was challenged.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.LockUsersController.Patch (UserManagement) in 0.5615ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 184.5661ms 401 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/swagger/oauth2-redirect.html  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /oauth2-redirect.html was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 13.9873ms 304 text/html
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/api/Identity  
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "Identity"}. Executing action UserManagement.Controllers.IdentityController.Get (UserManagement)
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[1]
+      Authorization was successful.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.IdentityController.Get (UserManagement) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.IdentityController.Get (UserManagement), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 5.477ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'UserManagement.Models.User'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.IdentityController.Get (UserManagement) in 32.5812ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 585.6424ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 PATCH http://localhost:44362/api/LockUsers?id=10  
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Patch", controller = "LockUsers"}. Executing action UserManagement.Controllers.LockUsersController.Patch (UserManagement)
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[1]
+      Authorization was successful.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.LockUsersController.Patch (UserManagement) with arguments (10) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.4-rtm-31024 initialized 'SsoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[@__id_0='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [u].[UsersId], [u].[IsLockedOut], [u].[Name], [u].[Password], [u].[PasswordRetryCount], [u].[Profile], [u].[Surname], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[UsersId] = @__id_0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.LockUsersController.Patch (UserManagement), returned result Microsoft.AspNetCore.Mvc.NotFoundResult in 331.4967ms.
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 404
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.LockUsersController.Patch (UserManagement) in 459.1171ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 599.0656ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 PATCH http://localhost:44362/api/LockUsers?id=10  
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Patch", controller = "LockUsers"}. Executing action UserManagement.Controllers.LockUsersController.Patch (UserManagement)
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[1]
+      Authorization was successful.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.LockUsersController.Patch (UserManagement) with arguments (10) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.4-rtm-31024 initialized 'SsoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (7ms) [Parameters=[@__id_0='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [u].[UsersId], [u].[IsLockedOut], [u].[Name], [u].[Password], [u].[PasswordRetryCount], [u].[Profile], [u].[Surname], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[UsersId] = @__id_0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.LockUsersController.Patch (UserManagement), returned result Microsoft.AspNetCore.Mvc.NotFoundResult in 11.4208ms.
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 404
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.LockUsersController.Patch (UserManagement) in 12.6132ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 188.7551ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 PATCH http://localhost:44362/api/LockUsers?id=10  
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Patch", controller = "LockUsers"}. Executing action UserManagement.Controllers.LockUsersController.Patch (UserManagement)
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[1]
+      Authorization was successful.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.LockUsersController.Patch (UserManagement) with arguments (10) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.4-rtm-31024 initialized 'SsoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__id_0='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [u].[UsersId], [u].[IsLockedOut], [u].[Name], [u].[Password], [u].[PasswordRetryCount], [u].[Profile], [u].[Surname], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[UsersId] = @__id_0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.LockUsersController.Patch (UserManagement), returned result Microsoft.AspNetCore.Mvc.NotFoundResult in 22.412ms.
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 404
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.LockUsersController.Patch (UserManagement) in 23.1596ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 212.9668ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 PATCH http://localhost:44362/api/LockUsers?id=10  
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Patch", controller = "LockUsers"}. Executing action UserManagement.Controllers.LockUsersController.Patch (UserManagement)
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[1]
+      Authorization was successful.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.LockUsersController.Patch (UserManagement) with arguments (10) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.4-rtm-31024 initialized 'SsoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (9ms) [Parameters=[@__id_0='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [u].[UsersId], [u].[IsLockedOut], [u].[Name], [u].[Password], [u].[PasswordRetryCount], [u].[Profile], [u].[Surname], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[UsersId] = @__id_0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.LockUsersController.Patch (UserManagement), returned result Microsoft.AspNetCore.Mvc.NotFoundResult in 9.3658ms.
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 404
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.LockUsersController.Patch (UserManagement) in 9.7757ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 258.2726ms 404 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

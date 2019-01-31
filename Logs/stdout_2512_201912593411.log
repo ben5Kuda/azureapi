@@ -1,0 +1,91 @@
+info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[0]
+      User profile is available. Using 'C:\Users\kmushore\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+Hosting environment: Development
+Content root path: C:\Users\kmushore\Documents\Visual Studio 2017\Projects\MicroApiDemo\Host
+Now listening on: http://127.0.0.1:17499
+Application started. Press Ctrl+C to shut down.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/api/values  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 2438.5105ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/swagger/index.html  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 261.4613ms 200 text/html
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/swagger/v1/swagger.json  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 169.0668ms 200 application/json;charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/swagger/oauth2-redirect.html  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /oauth2-redirect.html was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 139.3996ms 304 text/html
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/api/Identity  
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "Identity"}. Executing action UserManagement.Controllers.IdentityController.Get (UserManagement)
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[1]
+      Authorization was successful.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.IdentityController.Get (UserManagement) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.IdentityController.Get (UserManagement), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.8626ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'UserManagement.Models.User'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.IdentityController.Get (UserManagement) in 42.1652ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 517.6908ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/api/Users  
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "Users"}. Executing action UserManagement.UsersController.Get (UserManagement)
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[1]
+      Authorization was successful.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.UsersController.Get (UserManagement) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.4-rtm-31024 initialized 'SsoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.UsersController.Get (UserManagement), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 166.9036ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[UserManagement.Models.User, UserManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [u].[UsersId], [u].[Username], [u].[Name], [u].[Surname], [u].[Profile]
+      FROM [Users] AS [u]
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.UsersController.Get (UserManagement) in 400.3158ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 579.7095ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/api/Users/123388  
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[2]
+      Successfully validated the token.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "Users"}. Executing action UserManagement.UsersController.Get (UserManagement)
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[1]
+      Authorization was successful.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.UsersController.Get (UserManagement) with arguments (123388) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.4-rtm-31024 initialized 'SsoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__id_0='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [u].[UsersId], [u].[Username], [u].[Name], [u].[Surname], [u].[Profile]
+      FROM [Users] AS [u]
+      WHERE [u].[UsersId] = @__id_0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.UsersController.Get (UserManagement), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 34.0498ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'UserManagement.Models.User'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.UsersController.Get (UserManagement) in 59.2096ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 207.1539ms 200 application/json; charset=utf-8

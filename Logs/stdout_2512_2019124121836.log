@@ -1,0 +1,102 @@
+info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[0]
+      User profile is available. Using 'C:\Users\kmushore\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+Hosting environment: Development
+Content root path: C:\Users\kmushore\Documents\Visual Studio 2017\Projects\MicroApiDemo\Host
+Now listening on: http://127.0.0.1:47119
+Application started. Press Ctrl+C to shut down.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/api/values  
+fail: Microsoft.AspNetCore.Server.Kestrel[13]
+      Connection id "0HLK1UO8UASGU", Request id "0HLK1UO8UASGU:00000001": An unhandled exception was thrown by the application.
+Elasticsearch.Net.UnexpectedElasticsearchClientException: Self referencing loop detected for property 'logFactory' with type 'NLog.LogFactory'. Path 'factory.configuration'. ---> Elastic.Internal.JsonNet.JsonSerializationException: Self referencing loop detected for property 'logFactory' with type 'NLog.LogFactory'. Path 'factory.configuration'.
+   at Elastic.Internal.JsonNet.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Elastic.Internal.JsonNet.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Elastic.Internal.JsonNet.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Elastic.Internal.JsonNet.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Elastic.Internal.JsonNet.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Elastic.Internal.JsonNet.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Elastic.Internal.JsonNet.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Nest.InternalSerializer.Serialize[T](T data, Stream writableStream, SerializationFormatting formatting)
+   at Nest.GenericProxyRequestConverterBase.WriteJson(JsonWriter writer, Object value, JsonSerializer serializer)
+   at Elastic.Internal.JsonNet.Serialization.JsonSerializerInternalWriter.SerializeConvertable(JsonWriter writer, JsonConverter converter, Object value, JsonContract contract, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Elastic.Internal.JsonNet.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Elastic.Internal.JsonNet.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Nest.InternalSerializer.Serialize[T](T data, Stream writableStream, SerializationFormatting formatting)
+   at Elasticsearch.Net.SerializableData`1.Write(Stream writableStream, IConnectionConfigurationValues settings)
+   at Elasticsearch.Net.HttpConnection.CreateRequestMessage(RequestData requestData)
+   at Elasticsearch.Net.HttpConnection.CreateHttpRequestMessage(RequestData requestData)
+   at Elasticsearch.Net.HttpConnection.RequestAsync[TResponse](RequestData requestData, CancellationToken cancellationToken)
+   at Elasticsearch.Net.RequestPipeline.CallElasticsearchAsync[TResponse](RequestData requestData, CancellationToken cancellationToken)
+   at Elasticsearch.Net.Transport`1.RequestAsync[TResponse](HttpMethod method, String path, CancellationToken cancellationToken, PostData data, IRequestParameters requestParameters)
+   --- End of inner exception stack trace ---
+   at Elasticsearch.Net.Transport`1.RequestAsync[TResponse](HttpMethod method, String path, CancellationToken cancellationToken, PostData data, IRequestParameters requestParameters)
+   at Nest.ElasticClient.Nest.IHighLevelToLowLevelDispatcher.DispatchAsync[TRequest,TQueryString,TResponse,TResponseInterface](TRequest request, CancellationToken cancellationToken, Func`3 responseGenerator, Func`4 dispatch)
+   at Host.Logger.ResponseLogMiddleware.Invoke(HttpContext context) in C:\Users\kmushore\Documents\Visual Studio 2017\Projects\MicroApiDemo\Host\Logger\ResponseLogMiddleware.cs:line 154
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 1086.668ms 500 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/swagger/index.html  
+fail: Microsoft.AspNetCore.Server.Kestrel[13]
+      Connection id "0HLK1UO8UASGU", Request id "0HLK1UO8UASGU:00000002": An unhandled exception was thrown by the application.
+Elasticsearch.Net.UnexpectedElasticsearchClientException: Self referencing loop detected for property 'logFactory' with type 'NLog.LogFactory'. Path 'factory.configuration'. ---> Elastic.Internal.JsonNet.JsonSerializationException: Self referencing loop detected for property 'logFactory' with type 'NLog.LogFactory'. Path 'factory.configuration'.
+   at Elastic.Internal.JsonNet.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Elastic.Internal.JsonNet.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Elastic.Internal.JsonNet.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Elastic.Internal.JsonNet.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Elastic.Internal.JsonNet.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Elastic.Internal.JsonNet.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Elastic.Internal.JsonNet.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Nest.InternalSerializer.Serialize[T](T data, Stream writableStream, SerializationFormatting formatting)
+   at Nest.GenericProxyRequestConverterBase.WriteJson(JsonWriter writer, Object value, JsonSerializer serializer)
+   at Elastic.Internal.JsonNet.Serialization.JsonSerializerInternalWriter.SerializeConvertable(JsonWriter writer, JsonConverter converter, Object value, JsonContract contract, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Elastic.Internal.JsonNet.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Elastic.Internal.JsonNet.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Nest.InternalSerializer.Serialize[T](T data, Stream writableStream, SerializationFormatting formatting)
+   at Elasticsearch.Net.SerializableData`1.Write(Stream writableStream, IConnectionConfigurationValues settings)
+   at Elasticsearch.Net.HttpConnection.CreateRequestMessage(RequestData requestData)
+   at Elasticsearch.Net.HttpConnection.CreateHttpRequestMessage(RequestData requestData)
+   at Elasticsearch.Net.HttpConnection.RequestAsync[TResponse](RequestData requestData, CancellationToken cancellationToken)
+   at Elasticsearch.Net.RequestPipeline.CallElasticsearchAsync[TResponse](RequestData requestData, CancellationToken cancellationToken)
+   at Elasticsearch.Net.Transport`1.RequestAsync[TResponse](HttpMethod method, String path, CancellationToken cancellationToken, PostData data, IRequestParameters requestParameters)
+   --- End of inner exception stack trace ---
+   at Elasticsearch.Net.Transport`1.RequestAsync[TResponse](HttpMethod method, String path, CancellationToken cancellationToken, PostData data, IRequestParameters requestParameters)
+   at Nest.ElasticClient.Nest.IHighLevelToLowLevelDispatcher.DispatchAsync[TRequest,TQueryString,TResponse,TResponseInterface](TRequest request, CancellationToken cancellationToken, Func`3 responseGenerator, Func`4 dispatch)
+   at Host.Logger.ResponseLogMiddleware.Invoke(HttpContext context) in C:\Users\kmushore\Documents\Visual Studio 2017\Projects\MicroApiDemo\Host\Logger\ResponseLogMiddleware.cs:line 154
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 122.1393ms 200 text/html
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/swagger/index.html  
+fail: Microsoft.AspNetCore.Server.Kestrel[13]
+      Connection id "0HLK1UO8UASGV", Request id "0HLK1UO8UASGV:00000001": An unhandled exception was thrown by the application.
+Elasticsearch.Net.UnexpectedElasticsearchClientException: Self referencing loop detected for property 'logFactory' with type 'NLog.LogFactory'. Path 'factory.configuration'. ---> Elastic.Internal.JsonNet.JsonSerializationException: Self referencing loop detected for property 'logFactory' with type 'NLog.LogFactory'. Path 'factory.configuration'.
+   at Elastic.Internal.JsonNet.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Elastic.Internal.JsonNet.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Elastic.Internal.JsonNet.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Elastic.Internal.JsonNet.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Elastic.Internal.JsonNet.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Elastic.Internal.JsonNet.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Elastic.Internal.JsonNet.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Nest.InternalSerializer.Serialize[T](T data, Stream writableStream, SerializationFormatting formatting)
+   at Nest.GenericProxyRequestConverterBase.WriteJson(JsonWriter writer, Object value, JsonSerializer serializer)
+   at Elastic.Internal.JsonNet.Serialization.JsonSerializerInternalWriter.SerializeConvertable(JsonWriter writer, JsonConverter converter, Object value, JsonContract contract, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Elastic.Internal.JsonNet.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Elastic.Internal.JsonNet.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Nest.InternalSerializer.Serialize[T](T data, Stream writableStream, SerializationFormatting formatting)
+   at Elasticsearch.Net.SerializableData`1.Write(Stream writableStream, IConnectionConfigurationValues settings)
+   at Elasticsearch.Net.HttpConnection.CreateRequestMessage(RequestData requestData)
+   at Elasticsearch.Net.HttpConnection.CreateHttpRequestMessage(RequestData requestData)
+   at Elasticsearch.Net.HttpConnection.RequestAsync[TResponse](RequestData requestData, CancellationToken cancellationToken)
+   at Elasticsearch.Net.RequestPipeline.CallElasticsearchAsync[TResponse](RequestData requestData, CancellationToken cancellationToken)
+   at Elasticsearch.Net.Transport`1.RequestAsync[TResponse](HttpMethod method, String path, CancellationToken cancellationToken, PostData data, IRequestParameters requestParameters)
+   --- End of inner exception stack trace ---
+   at Elasticsearch.Net.Transport`1.RequestAsync[TResponse](HttpMethod method, String path, CancellationToken cancellationToken, PostData data, IRequestParameters requestParameters)
+   at Nest.ElasticClient.Nest.IHighLevelToLowLevelDispatcher.DispatchAsync[TRequest,TQueryString,TResponse,TResponseInterface](TRequest request, CancellationToken cancellationToken, Func`3 responseGenerator, Func`4 dispatch)
+   at Host.Logger.ResponseLogMiddleware.Invoke(HttpContext context) in C:\Users\kmushore\Documents\Visual Studio 2017\Projects\MicroApiDemo\Host\Logger\ResponseLogMiddleware.cs:line 154
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 35.2426ms 200 text/html

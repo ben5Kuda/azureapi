@@ -1,0 +1,558 @@
+info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[0]
+      User profile is available. Using 'C:\Users\kmushore\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+Hosting environment: Development
+Content root path: C:\Users\kmushore\Documents\Visual Studio 2017\Projects\MicroApiDemo\Host
+Now listening on: http://127.0.0.1:11725
+Application started. Press Ctrl+C to shut down.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/swagger/index.html  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 549.6731ms 200 text/html
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:44362/swagger/v1/swagger.json  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 270.0529ms 200 application/json;charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 PUT http://localhost:44362/api/LockUsers?username=alice@zaza  0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Put", controller = "LockUsers"}. Executing action UserManagement.Controllers.LockUsersController.Put (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.LockUsersController.Put (UserManagement) with arguments (alice@zaza) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.4-rtm-31024 initialized 'SsoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[@__username_0='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [u].[UsersId], [u].[IsLockedOut], [u].[Name], [u].[Password], [u].[PasswordRetryCount], [u].[Profile], [u].[Surname], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[Username] = @__username_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@p7='?' (Size = 150), @p0='?' (DbType = Boolean), @p1='?' (Size = 150), @p2='?' (Size = 150), @p3='?' (DbType = Int32), @p4='?' (Size = 150), @p5='?' (Size = 150), @p6='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SET NOCOUNT ON;
+      UPDATE [Users] SET [IsLockedOut] = @p0, [Name] = @p1, [Password] = @p2, [PasswordRetryCount] = @p3, [Profile] = @p4, [Surname] = @p5, [Username] = @p6
+      WHERE [UsersId] = @p7;
+      SELECT @@ROWCOUNT;
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.LockUsersController.Put (UserManagement), returned result Microsoft.AspNetCore.Mvc.OkResult in 275.7119ms.
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 200
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.LockUsersController.Put (UserManagement) in 348.3296ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 922.4763ms 200 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 PUT http://localhost:44362/api/LockUsers?username=alice@zaza  0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Put", controller = "LockUsers"}. Executing action UserManagement.Controllers.LockUsersController.Put (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.LockUsersController.Put (UserManagement) with arguments (alice@zaza) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.4-rtm-31024 initialized 'SsoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (6ms) [Parameters=[@__username_0='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [u].[UsersId], [u].[IsLockedOut], [u].[Name], [u].[Password], [u].[PasswordRetryCount], [u].[Profile], [u].[Surname], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[Username] = @__username_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[@p7='?' (Size = 150), @p0='?' (DbType = Boolean), @p1='?' (Size = 150), @p2='?' (Size = 150), @p3='?' (DbType = Int32), @p4='?' (Size = 150), @p5='?' (Size = 150), @p6='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SET NOCOUNT ON;
+      UPDATE [Users] SET [IsLockedOut] = @p0, [Name] = @p1, [Password] = @p2, [PasswordRetryCount] = @p3, [Profile] = @p4, [Surname] = @p5, [Username] = @p6
+      WHERE [UsersId] = @p7;
+      SELECT @@ROWCOUNT;
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.LockUsersController.Put (UserManagement), returned result Microsoft.AspNetCore.Mvc.OkResult in 20.9814ms.
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 200
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.LockUsersController.Put (UserManagement) in 22.7887ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 160.4228ms 200 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 PUT http://localhost:44362/api/LockUsers?username=alice@zaza  0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Put", controller = "LockUsers"}. Executing action UserManagement.Controllers.LockUsersController.Put (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.LockUsersController.Put (UserManagement) with arguments (alice@zaza) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.4-rtm-31024 initialized 'SsoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [u].[UsersId], [u].[IsLockedOut], [u].[Name], [u].[Password], [u].[PasswordRetryCount], [u].[Profile], [u].[Surname], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[Username] = @__username_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@p7='?' (Size = 150), @p0='?' (DbType = Boolean), @p1='?' (Size = 150), @p2='?' (Size = 150), @p3='?' (DbType = Int32), @p4='?' (Size = 150), @p5='?' (Size = 150), @p6='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SET NOCOUNT ON;
+      UPDATE [Users] SET [IsLockedOut] = @p0, [Name] = @p1, [Password] = @p2, [PasswordRetryCount] = @p3, [Profile] = @p4, [Surname] = @p5, [Username] = @p6
+      WHERE [UsersId] = @p7;
+      SELECT @@ROWCOUNT;
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.LockUsersController.Put (UserManagement), returned result Microsoft.AspNetCore.Mvc.OkResult in 7.1045ms.
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 200
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.LockUsersController.Put (UserManagement) in 7.6997ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 123.5318ms 200 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 PUT http://localhost:44362/api/LockUsers?username=alice@zaza  0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Put", controller = "LockUsers"}. Executing action UserManagement.Controllers.LockUsersController.Put (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.LockUsersController.Put (UserManagement) with arguments (alice@zaza) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.4-rtm-31024 initialized 'SsoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [u].[UsersId], [u].[IsLockedOut], [u].[Name], [u].[Password], [u].[PasswordRetryCount], [u].[Profile], [u].[Surname], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[Username] = @__username_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@p7='?' (Size = 150), @p0='?' (DbType = Boolean), @p1='?' (Size = 150), @p2='?' (Size = 150), @p3='?' (DbType = Int32), @p4='?' (Size = 150), @p5='?' (Size = 150), @p6='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SET NOCOUNT ON;
+      UPDATE [Users] SET [IsLockedOut] = @p0, [Name] = @p1, [Password] = @p2, [PasswordRetryCount] = @p3, [Profile] = @p4, [Surname] = @p5, [Username] = @p6
+      WHERE [UsersId] = @p7;
+      SELECT @@ROWCOUNT;
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.LockUsersController.Put (UserManagement), returned result Microsoft.AspNetCore.Mvc.OkResult in 6.8153ms.
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 200
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.LockUsersController.Put (UserManagement) in 7.2081ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 131.6461ms 200 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 PUT http://localhost:44362/api/LockUsers?username=alice@zaza  0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Put", controller = "LockUsers"}. Executing action UserManagement.Controllers.LockUsersController.Put (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.LockUsersController.Put (UserManagement) with arguments (alice@zaza) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.4-rtm-31024 initialized 'SsoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [u].[UsersId], [u].[IsLockedOut], [u].[Name], [u].[Password], [u].[PasswordRetryCount], [u].[Profile], [u].[Surname], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[Username] = @__username_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@p7='?' (Size = 150), @p0='?' (DbType = Boolean), @p1='?' (Size = 150), @p2='?' (Size = 150), @p3='?' (DbType = Int32), @p4='?' (Size = 150), @p5='?' (Size = 150), @p6='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SET NOCOUNT ON;
+      UPDATE [Users] SET [IsLockedOut] = @p0, [Name] = @p1, [Password] = @p2, [PasswordRetryCount] = @p3, [Profile] = @p4, [Surname] = @p5, [Username] = @p6
+      WHERE [UsersId] = @p7;
+      SELECT @@ROWCOUNT;
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.LockUsersController.Put (UserManagement), returned result Microsoft.AspNetCore.Mvc.OkResult in 5.8767ms.
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 200
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.LockUsersController.Put (UserManagement) in 6.3464ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 120.1334ms 200 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 PUT http://localhost:44362/api/LockUsers?username=alice@zaza  0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Put", controller = "LockUsers"}. Executing action UserManagement.Controllers.LockUsersController.Put (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.LockUsersController.Put (UserManagement) with arguments (alice@zaza) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.4-rtm-31024 initialized 'SsoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [u].[UsersId], [u].[IsLockedOut], [u].[Name], [u].[Password], [u].[PasswordRetryCount], [u].[Profile], [u].[Surname], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[Username] = @__username_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@p7='?' (Size = 150), @p0='?' (DbType = Boolean), @p1='?' (Size = 150), @p2='?' (Size = 150), @p3='?' (DbType = Int32), @p4='?' (Size = 150), @p5='?' (Size = 150), @p6='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SET NOCOUNT ON;
+      UPDATE [Users] SET [IsLockedOut] = @p0, [Name] = @p1, [Password] = @p2, [PasswordRetryCount] = @p3, [Profile] = @p4, [Surname] = @p5, [Username] = @p6
+      WHERE [UsersId] = @p7;
+      SELECT @@ROWCOUNT;
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.LockUsersController.Put (UserManagement), returned result Microsoft.AspNetCore.Mvc.OkResult in 7.3321ms.
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 200
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.LockUsersController.Put (UserManagement) in 7.7354ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 121.9681ms 200 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 PUT http://localhost:44362/api/LockUsers?username=alice@zaza  0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Put", controller = "LockUsers"}. Executing action UserManagement.Controllers.LockUsersController.Put (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.LockUsersController.Put (UserManagement) with arguments (alice@zaza) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.4-rtm-31024 initialized 'SsoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [u].[UsersId], [u].[IsLockedOut], [u].[Name], [u].[Password], [u].[PasswordRetryCount], [u].[Profile], [u].[Surname], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[Username] = @__username_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@p7='?' (Size = 150), @p0='?' (DbType = Boolean), @p1='?' (Size = 150), @p2='?' (Size = 150), @p3='?' (DbType = Int32), @p4='?' (Size = 150), @p5='?' (Size = 150), @p6='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SET NOCOUNT ON;
+      UPDATE [Users] SET [IsLockedOut] = @p0, [Name] = @p1, [Password] = @p2, [PasswordRetryCount] = @p3, [Profile] = @p4, [Surname] = @p5, [Username] = @p6
+      WHERE [UsersId] = @p7;
+      SELECT @@ROWCOUNT;
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.LockUsersController.Put (UserManagement), returned result Microsoft.AspNetCore.Mvc.OkResult in 6.2355ms.
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 200
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.LockUsersController.Put (UserManagement) in 6.711ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 121.0987ms 200 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 PUT http://localhost:44362/api/LockUsers?username=alice@zaza  0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Put", controller = "LockUsers"}. Executing action UserManagement.Controllers.LockUsersController.Put (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.LockUsersController.Put (UserManagement) with arguments (alice@zaza) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.4-rtm-31024 initialized 'SsoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [u].[UsersId], [u].[IsLockedOut], [u].[Name], [u].[Password], [u].[PasswordRetryCount], [u].[Profile], [u].[Surname], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[Username] = @__username_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@p7='?' (Size = 150), @p0='?' (DbType = Boolean), @p1='?' (Size = 150), @p2='?' (Size = 150), @p3='?' (DbType = Int32), @p4='?' (Size = 150), @p5='?' (Size = 150), @p6='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SET NOCOUNT ON;
+      UPDATE [Users] SET [IsLockedOut] = @p0, [Name] = @p1, [Password] = @p2, [PasswordRetryCount] = @p3, [Profile] = @p4, [Surname] = @p5, [Username] = @p6
+      WHERE [UsersId] = @p7;
+      SELECT @@ROWCOUNT;
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.LockUsersController.Put (UserManagement), returned result Microsoft.AspNetCore.Mvc.OkResult in 6.9302ms.
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 200
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.LockUsersController.Put (UserManagement) in 7.5035ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 120.691ms 200 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 PUT http://localhost:44362/api/LockUsers?username=alice@zaza  0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Put", controller = "LockUsers"}. Executing action UserManagement.Controllers.LockUsersController.Put (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.LockUsersController.Put (UserManagement) with arguments (alice@zaza) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.4-rtm-31024 initialized 'SsoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [u].[UsersId], [u].[IsLockedOut], [u].[Name], [u].[Password], [u].[PasswordRetryCount], [u].[Profile], [u].[Surname], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[Username] = @__username_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@p7='?' (Size = 150), @p0='?' (DbType = Boolean), @p1='?' (Size = 150), @p2='?' (Size = 150), @p3='?' (DbType = Int32), @p4='?' (Size = 150), @p5='?' (Size = 150), @p6='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SET NOCOUNT ON;
+      UPDATE [Users] SET [IsLockedOut] = @p0, [Name] = @p1, [Password] = @p2, [PasswordRetryCount] = @p3, [Profile] = @p4, [Surname] = @p5, [Username] = @p6
+      WHERE [UsersId] = @p7;
+      SELECT @@ROWCOUNT;
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.LockUsersController.Put (UserManagement), returned result Microsoft.AspNetCore.Mvc.OkResult in 7.2697ms.
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 200
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.LockUsersController.Put (UserManagement) in 7.9666ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 124.741ms 200 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 PUT http://localhost:44362/api/LockUsers?username=alice@zaza  0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Put", controller = "LockUsers"}. Executing action UserManagement.Controllers.LockUsersController.Put (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.LockUsersController.Put (UserManagement) with arguments (alice@zaza) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.4-rtm-31024 initialized 'SsoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [u].[UsersId], [u].[IsLockedOut], [u].[Name], [u].[Password], [u].[PasswordRetryCount], [u].[Profile], [u].[Surname], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[Username] = @__username_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@p7='?' (Size = 150), @p0='?' (DbType = Boolean), @p1='?' (Size = 150), @p2='?' (Size = 150), @p3='?' (DbType = Int32), @p4='?' (Size = 150), @p5='?' (Size = 150), @p6='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SET NOCOUNT ON;
+      UPDATE [Users] SET [IsLockedOut] = @p0, [Name] = @p1, [Password] = @p2, [PasswordRetryCount] = @p3, [Profile] = @p4, [Surname] = @p5, [Username] = @p6
+      WHERE [UsersId] = @p7;
+      SELECT @@ROWCOUNT;
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.LockUsersController.Put (UserManagement), returned result Microsoft.AspNetCore.Mvc.OkResult in 5.217ms.
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 200
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.LockUsersController.Put (UserManagement) in 5.6589ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 109.02ms 200 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 PUT http://localhost:44362/api/LockUsers?username=leo10  0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Put", controller = "LockUsers"}. Executing action UserManagement.Controllers.LockUsersController.Put (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.LockUsersController.Put (UserManagement) with arguments (leo10) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.4-rtm-31024 initialized 'SsoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [u].[UsersId], [u].[IsLockedOut], [u].[Name], [u].[Password], [u].[PasswordRetryCount], [u].[Profile], [u].[Surname], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[Username] = @__username_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p7='?' (Size = 150), @p0='?' (DbType = Boolean), @p1='?' (Size = 150), @p2='?' (Size = 150), @p3='?' (DbType = Int32), @p4='?' (Size = 150), @p5='?' (Size = 150), @p6='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SET NOCOUNT ON;
+      UPDATE [Users] SET [IsLockedOut] = @p0, [Name] = @p1, [Password] = @p2, [PasswordRetryCount] = @p3, [Profile] = @p4, [Surname] = @p5, [Username] = @p6
+      WHERE [UsersId] = @p7;
+      SELECT @@ROWCOUNT;
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.LockUsersController.Put (UserManagement), returned result Microsoft.AspNetCore.Mvc.OkResult in 3.1205ms.
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 200
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.LockUsersController.Put (UserManagement) in 3.3914ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 107.8184ms 200 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 PUT http://localhost:44362/api/LockUsers?username=alice@zaza  0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Put", controller = "LockUsers"}. Executing action UserManagement.Controllers.LockUsersController.Put (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.LockUsersController.Put (UserManagement) with arguments (alice@zaza) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.4-rtm-31024 initialized 'SsoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [u].[UsersId], [u].[IsLockedOut], [u].[Name], [u].[Password], [u].[PasswordRetryCount], [u].[Profile], [u].[Surname], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[Username] = @__username_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@p7='?' (Size = 150), @p0='?' (DbType = Boolean), @p1='?' (Size = 150), @p2='?' (Size = 150), @p3='?' (DbType = Int32), @p4='?' (Size = 150), @p5='?' (Size = 150), @p6='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SET NOCOUNT ON;
+      UPDATE [Users] SET [IsLockedOut] = @p0, [Name] = @p1, [Password] = @p2, [PasswordRetryCount] = @p3, [Profile] = @p4, [Surname] = @p5, [Username] = @p6
+      WHERE [UsersId] = @p7;
+      SELECT @@ROWCOUNT;
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.LockUsersController.Put (UserManagement), returned result Microsoft.AspNetCore.Mvc.OkResult in 9.1051ms.
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 200
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.LockUsersController.Put (UserManagement) in 9.5908ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 130.0394ms 200 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 PUT http://localhost:44362/api/LockUsers?username=leo10  0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Put", controller = "LockUsers"}. Executing action UserManagement.Controllers.LockUsersController.Put (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.LockUsersController.Put (UserManagement) with arguments (leo10) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.4-rtm-31024 initialized 'SsoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [u].[UsersId], [u].[IsLockedOut], [u].[Name], [u].[Password], [u].[PasswordRetryCount], [u].[Profile], [u].[Surname], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[Username] = @__username_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p7='?' (Size = 150), @p0='?' (DbType = Boolean), @p1='?' (Size = 150), @p2='?' (Size = 150), @p3='?' (DbType = Int32), @p4='?' (Size = 150), @p5='?' (Size = 150), @p6='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SET NOCOUNT ON;
+      UPDATE [Users] SET [IsLockedOut] = @p0, [Name] = @p1, [Password] = @p2, [PasswordRetryCount] = @p3, [Profile] = @p4, [Surname] = @p5, [Username] = @p6
+      WHERE [UsersId] = @p7;
+      SELECT @@ROWCOUNT;
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.LockUsersController.Put (UserManagement), returned result Microsoft.AspNetCore.Mvc.OkResult in 3.3615ms.
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 200
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.LockUsersController.Put (UserManagement) in 3.6554ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 161.8188ms 200 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 PUT http://localhost:44362/api/LockUsers?username=alice@zaza  0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Put", controller = "LockUsers"}. Executing action UserManagement.Controllers.LockUsersController.Put (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.LockUsersController.Put (UserManagement) with arguments (alice@zaza) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.4-rtm-31024 initialized 'SsoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[@__username_0='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [u].[UsersId], [u].[IsLockedOut], [u].[Name], [u].[Password], [u].[PasswordRetryCount], [u].[Profile], [u].[Surname], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[Username] = @__username_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (6ms) [Parameters=[@p7='?' (Size = 150), @p0='?' (DbType = Boolean), @p1='?' (Size = 150), @p2='?' (Size = 150), @p3='?' (DbType = Int32), @p4='?' (Size = 150), @p5='?' (Size = 150), @p6='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SET NOCOUNT ON;
+      UPDATE [Users] SET [IsLockedOut] = @p0, [Name] = @p1, [Password] = @p2, [PasswordRetryCount] = @p3, [Profile] = @p4, [Surname] = @p5, [Username] = @p6
+      WHERE [UsersId] = @p7;
+      SELECT @@ROWCOUNT;
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.LockUsersController.Put (UserManagement), returned result Microsoft.AspNetCore.Mvc.OkResult in 20.7429ms.
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 200
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.LockUsersController.Put (UserManagement) in 21.1116ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 172.2922ms 200 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 PUT http://localhost:44362/api/LockUsers?username=leo10  0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Put", controller = "LockUsers"}. Executing action UserManagement.Controllers.LockUsersController.Put (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.LockUsersController.Put (UserManagement) with arguments (leo10) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.4-rtm-31024 initialized 'SsoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[@__username_0='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [u].[UsersId], [u].[IsLockedOut], [u].[Name], [u].[Password], [u].[PasswordRetryCount], [u].[Profile], [u].[Surname], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[Username] = @__username_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@p7='?' (Size = 150), @p0='?' (DbType = Boolean), @p1='?' (Size = 150), @p2='?' (Size = 150), @p3='?' (DbType = Int32), @p4='?' (Size = 150), @p5='?' (Size = 150), @p6='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SET NOCOUNT ON;
+      UPDATE [Users] SET [IsLockedOut] = @p0, [Name] = @p1, [Password] = @p2, [PasswordRetryCount] = @p3, [Profile] = @p4, [Surname] = @p5, [Username] = @p6
+      WHERE [UsersId] = @p7;
+      SELECT @@ROWCOUNT;
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.LockUsersController.Put (UserManagement), returned result Microsoft.AspNetCore.Mvc.OkResult in 14.4756ms.
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 200
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.LockUsersController.Put (UserManagement) in 14.751ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 192.5738ms 200 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 PUT http://localhost:44362/api/LockUsers?username=alice@zaza  0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Put", controller = "LockUsers"}. Executing action UserManagement.Controllers.LockUsersController.Put (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.LockUsersController.Put (UserManagement) with arguments (alice@zaza) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.4-rtm-31024 initialized 'SsoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [u].[UsersId], [u].[IsLockedOut], [u].[Name], [u].[Password], [u].[PasswordRetryCount], [u].[Profile], [u].[Surname], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[Username] = @__username_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@p7='?' (Size = 150), @p0='?' (DbType = Boolean), @p1='?' (Size = 150), @p2='?' (Size = 150), @p3='?' (DbType = Int32), @p4='?' (Size = 150), @p5='?' (Size = 150), @p6='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SET NOCOUNT ON;
+      UPDATE [Users] SET [IsLockedOut] = @p0, [Name] = @p1, [Password] = @p2, [PasswordRetryCount] = @p3, [Profile] = @p4, [Surname] = @p5, [Username] = @p6
+      WHERE [UsersId] = @p7;
+      SELECT @@ROWCOUNT;
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.LockUsersController.Put (UserManagement), returned result Microsoft.AspNetCore.Mvc.OkResult in 7.0782ms.
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 200
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.LockUsersController.Put (UserManagement) in 7.4302ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 124.4723ms 200 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 PUT http://localhost:44362/api/LockUsers?username=leo10  0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Put", controller = "LockUsers"}. Executing action UserManagement.Controllers.LockUsersController.Put (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.LockUsersController.Put (UserManagement) with arguments (leo10) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.4-rtm-31024 initialized 'SsoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [u].[UsersId], [u].[IsLockedOut], [u].[Name], [u].[Password], [u].[PasswordRetryCount], [u].[Profile], [u].[Surname], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[Username] = @__username_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p7='?' (Size = 150), @p0='?' (DbType = Boolean), @p1='?' (Size = 150), @p2='?' (Size = 150), @p3='?' (DbType = Int32), @p4='?' (Size = 150), @p5='?' (Size = 150), @p6='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SET NOCOUNT ON;
+      UPDATE [Users] SET [IsLockedOut] = @p0, [Name] = @p1, [Password] = @p2, [PasswordRetryCount] = @p3, [Profile] = @p4, [Surname] = @p5, [Username] = @p6
+      WHERE [UsersId] = @p7;
+      SELECT @@ROWCOUNT;
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.LockUsersController.Put (UserManagement), returned result Microsoft.AspNetCore.Mvc.OkResult in 3.8637ms.
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 200
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.LockUsersController.Put (UserManagement) in 4.3221ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 157.4212ms 200 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 PUT http://localhost:44362/api/LockUsers?username=alice@zaza  0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Put", controller = "LockUsers"}. Executing action UserManagement.Controllers.LockUsersController.Put (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.LockUsersController.Put (UserManagement) with arguments (alice@zaza) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.4-rtm-31024 initialized 'SsoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [u].[UsersId], [u].[IsLockedOut], [u].[Name], [u].[Password], [u].[PasswordRetryCount], [u].[Profile], [u].[Surname], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[Username] = @__username_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@p7='?' (Size = 150), @p0='?' (DbType = Boolean), @p1='?' (Size = 150), @p2='?' (Size = 150), @p3='?' (DbType = Int32), @p4='?' (Size = 150), @p5='?' (Size = 150), @p6='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SET NOCOUNT ON;
+      UPDATE [Users] SET [IsLockedOut] = @p0, [Name] = @p1, [Password] = @p2, [PasswordRetryCount] = @p3, [Profile] = @p4, [Surname] = @p5, [Username] = @p6
+      WHERE [UsersId] = @p7;
+      SELECT @@ROWCOUNT;
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.LockUsersController.Put (UserManagement), returned result Microsoft.AspNetCore.Mvc.OkResult in 6.2377ms.
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 200
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.LockUsersController.Put (UserManagement) in 6.6195ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 122.3787ms 200 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 PUT http://localhost:44362/api/LockUsers?username=leo10  0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Put", controller = "LockUsers"}. Executing action UserManagement.Controllers.LockUsersController.Put (UserManagement)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method UserManagement.Controllers.LockUsersController.Put (UserManagement) with arguments (leo10) - Validation state: Valid
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.4-rtm-31024 initialized 'SsoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [u].[UsersId], [u].[IsLockedOut], [u].[Name], [u].[Password], [u].[PasswordRetryCount], [u].[Profile], [u].[Surname], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[Username] = @__username_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@p7='?' (Size = 150), @p0='?' (DbType = Boolean), @p1='?' (Size = 150), @p2='?' (Size = 150), @p3='?' (DbType = Int32), @p4='?' (Size = 150), @p5='?' (Size = 150), @p6='?' (Size = 150)], CommandType='Text', CommandTimeout='30']
+      SET NOCOUNT ON;
+      UPDATE [Users] SET [IsLockedOut] = @p0, [Name] = @p1, [Password] = @p2, [PasswordRetryCount] = @p3, [Profile] = @p4, [Surname] = @p5, [Username] = @p6
+      WHERE [UsersId] = @p7;
+      SELECT @@ROWCOUNT;
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method UserManagement.Controllers.LockUsersController.Put (UserManagement), returned result Microsoft.AspNetCore.Mvc.OkResult in 5.0022ms.
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 200
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action UserManagement.Controllers.LockUsersController.Put (UserManagement) in 5.3253ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 118.9008ms 200 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
