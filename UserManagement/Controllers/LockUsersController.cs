@@ -11,7 +11,7 @@ namespace UserManagement.Controllers
 { 
   [Route("api/[controller]")]
   [ApiController]
-//  [Authorize]
+  [Authorize]
   public class LockUsersController : Controller
   {
     private readonly Context.SsoDbContext _sso;
@@ -22,8 +22,8 @@ namespace UserManagement.Controllers
     }
 
    
-    [HttpPatch]
-    public ActionResult Patch(string username)
+    [HttpPut]
+    public ActionResult Put(string username)
     {
       var user = _sso.Users.Where(u => u.Username == username).FirstOrDefault();
 
@@ -33,8 +33,8 @@ namespace UserManagement.Controllers
       }
       var claims = from c in User.Claims select new { c.Type, c.Value };
 
-     var hasAccess = claims.Where(r => r.Type == "role")
-           .Where(v => v.Value == "Admin").Any();
+      var hasAccess = claims.Where(r => r.Type == "role")
+            .Where(v => v.Value == "Admin").Any();
 
       if (!hasAccess)
       {

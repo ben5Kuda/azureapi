@@ -37,6 +37,8 @@ namespace Host
       services.AddDbContext<SsoDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("SsoDbContext")));
       services.AddSingleton(Configuration.GetSection("ElasticSearch").Get<ElasticSettings>());
 
+      JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
+
       services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
            .AddJwtBearer(options =>
            {
@@ -44,12 +46,11 @@ namespace Host
              options.Authority = "https://localhost:5021";
              // name of the API resource
              options.Audience = "https://localhost:5021/resources";
-             options.SaveToken = true;
+             //options.SaveToken = true;
 
            });
 
-      JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
-
+     
       services.AddSwaggerGen(c =>
       {
         c.SwaggerDoc("v1", new Info { Title = "apicore", Version = "v1" });
@@ -96,7 +97,8 @@ namespace Host
 
       app.UseHttpsRedirection();
       app.UseAuthentication();
-      app.UseMvc();
+
+      app.UseMvcWithDefaultRoute();
 
       app.UseSwagger();
 
