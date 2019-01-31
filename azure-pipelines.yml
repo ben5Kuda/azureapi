@@ -17,8 +17,8 @@ steps:
   displayName: 'dotnet build $(buildConfiguration)'
 
 - task: PublishBuildArtifacts@1
-  inputs:
+  inputs:  
     pathtoPublish: $(Build.ArtifactStagingDirectory)
     publishLocation: 'Container'
-    TargetPath: path
+    TargetPath: /home/vsts/work/1/a
     artifactName: MyBuildOutputs
